@@ -174,17 +174,6 @@
       }
     ],
     "unit-no-unknown": true,
-    "value-list-comma-space-before": "never",
-    "scss/at-function-parentheses-space-before": "never",
-    "scss/at-mixin-pattern": "^.[a-z]+(-[a-z0-9])*",
-    "scss/at-rule-no-unknown": true,
-    "scss/comment-no-empty": true,
-    "scss/dollar-variable-colon-space-after": "always",
-    "scss/dollar-variable-first-in-block": true,
-    "scss/dollar-variable-pattern": "^.[a-z]+(-[a-z0-9])*",
-    "scss/double-slash-comment-empty-line-before": "always",
-    "scss/no-duplicate-mixins": true,
-    "scss/operator-no-unspaced": true,
-    "scss/percent-placeholder-pattern": "^.[a-z]+(-[a-z0-9])*"
+    "value-list-comma-space-before": "never"
   }
 }
