@@ -20,6 +20,75 @@
 </head>
 
 <body>
+  <!-- 1. 정보 컨테츠의 semantic한 마크업에 집중 mobile first-->
+  <!-- 2. 스타일을 위해서 마크업 진행 -->
+  <!-- 3. 리팩토링 -->
+  <!-- markup 보강은 grid system을 먼저 적용 -->
+  <!-- .container > .row > .col-* > 여기서 원하는 요소를 적용 / 반드시 지켜야 한다.-->
+  <header class="gnb">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-4">
+        <div class="gnb-left">
+          <h1 class="logo">
+            <a href="/">
+              <img src="./assets/images/logo.svg" alt="내일의 집">
+            </a>
+          </h1>
+
+          <!-- nav와 같은 section 태스는 반드기 heading tag를 가지고 있어야 한다. 문법적으로 올바르게 사용한 것이다.-->
+          <nav class="sm-hidden">
+            <h2 class="visually-hidden">메뉴</h2>
+            <ul class="gnb-nav-list">
+              <li class="gnb-nav-item"><a href="/">커뮤니티</a></li>
+              <li class="gnb-nav-item"><a href="/">스토어</a></li>
+              <li class="gnb-nav-item"><a href="/">인테리어시공</a></li>
+            </ul>
+          </nav>
+
+          <button class="gnb-icon-button sm-only" type="button" aria-label="메뉴 열기 버튼">
+            <i class="ic-menu"></i>
+          </button>
+        </div>
+        <div class="gnb-right">
+          <div class="input-group lg-only">
+            <i class="ic-search" aria-hidden></i>
+            <input class="form-input" type="text" placeholder="스토어 검색">
+          </div>
+
+          <div class="button-group">
+            <button class="gnb-icon-button lg-hidden" type="button" aria-label="검색창 열기 버튼">
+              <i class="ic-search"></i>
+            </button>
+
+            <a href="/" class="gnb-icon-button sm-hidden" aria-label="스크랩 페이지로 이동">
+              <i class="ic-bookmark"></i>
+            </a>
+
+            <a href="/" class="gnb-icon-button sm-hidden" aria-label="내소식 페이지로 이동">
+              <i class="ic-bell"></i>
+            </a>
+
+            <a href="/" class="gnb-icon-button" aria-label="장바구니 페이지로 이동">
+              <i class="ic-cart"></i>
+            </a>
+
+            <button class="gnb-avatar-button sm-hidden" type="button" aria-label="마이메뉴 열기 버튼">
+              <div class="avatar-32">
+                <img src="./assets/images/img-user-01.jpg" alt="profile image">
+              </div>
+            </button>
+          </div>
+
+          <button class="btn-primary btn-40 sm-hidden" type="button">
+            글쓰기
+            <i class="ic-chevron" aria-hidden></i>
+          </button>
+        </div>
+      </div>
+      </div>
+    </div>
+  </header>
 </body>
 
 </html>
