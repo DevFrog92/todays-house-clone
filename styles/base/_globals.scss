@@ -17,7 +17,11 @@
 }
 
 .md-only {
-  @media screen and (max-width: $md-breakpoint - 1) and (min-width: $lg-breakpoint) {
+  @media screen and (max-width: $md-breakpoint - 1) {
+    display: none !important;
+  }
+
+  @media screen and (min-width: $lg-breakpoint) {
     display: none !important;
   }
 }

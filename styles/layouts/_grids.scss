@@ -72,7 +72,7 @@ $lg-max-container: $lg-column-size * $lg-columns;
     }
   }
 
-  @include responsive(T) {
+  @include responsive(D) {
     max-width: $lg-max-container;
     padding: 0;
 
