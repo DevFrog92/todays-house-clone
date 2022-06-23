@@ -1,0 +1,17 @@
+.gnb-nav {
+  &-list {
+    @include flexbox(start);
+  }
+
+  &-item {
+    &:not(:last-of-type) {
+      margin-right: 24px;
+    }
+
+    a {
+      @include text-style(18, $primary);
+
+      font-weight: 700;
+    }
+  }
+}
