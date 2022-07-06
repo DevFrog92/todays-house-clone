@@ -12,6 +12,10 @@
     border-radius: 50%;
     overflow: hidden;
     transition: border-color .2s ease-in-out;
+    background-image: url("../../assets/images/img-user-default.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
 
 
     &:hover,
